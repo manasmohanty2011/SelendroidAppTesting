@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="labid" value="${labid}"></parameter>
+    <listeners>
+        <listener class-name="listners.Listners"/>
+        <listener class-name="listners.ScreenshotListener" />
+    </listeners>
+
+    <test verbose="2" name="RegisterUser">
+        <classes>
+            <class name="testcases.RegisterUser">
+                <methods>
+                    <include name="RegisterUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" name="VerifyEnButtonFunctionality">
+        <classes>
+            <class name="testcases.VerifyEnButtonFunctionality">
+                <methods>
+                    <include name="VerifyEnButtonFunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" name="VerifyDisplayTextViewButtonFunctionality">
+        <classes>
+            <class name="testcases.VerifyDisplayTextViewButtonFunctionality">
+                <methods>
+                    <include name="VerifyDisplayTextViewButtonFunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" name="VerifyShowProgressBarButtonFunctionality">
+        <classes>
+            <class name="testcases.VerifyShowProgressBarButtonFunctionality">
+                <methods>
+                    <include name="VerifyShowProgressBarButtonFunctionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
